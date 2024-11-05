@@ -3,12 +3,11 @@
 Cold boot attacks are a type of side channel attack, where an attacker gains access to information indirectly, by exploiting physical characteristics of the system (in this case, memory data that lingers after power is lost). 
 This Cold Boot Simulator demonstrates the concept of data remanence in RAM, a vulnerability that can be exploited in cold boot attacks. It visually simulates how data remains in memory even after power is turned off, which could potentially be accessed in an attack scenario.
 
-Requirements
-This simulator is built with React (a popular JavaScript library for building user interfaces).
-Framer Motion is used for animations and smooth transitions.
+## Requirements
+This simulator is built with NextJS
 Make sure you have Node.js and npm installed to run this project locally.
 
-Installation
+## Installation
 Clone this repository:
 
 ```bash
@@ -40,6 +39,7 @@ Write Secret Data: When the power is on, you can click the "Write Secret Data" b
 
 Time Tracker: The simulator tracks how long the system has been powered off, which is shown in seconds. This time correlates with how much data has decayed.
 
-Contributing
+## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
 
+## Project Report Attached as [PDF link](https://github.com/FrenzyVJN/cold-boot-simulator/blob/main/23110015_CIA-2_ModernCryptoSideChannelAttackAssignment.pdf)
