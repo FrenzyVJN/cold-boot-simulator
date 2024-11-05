@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Introduction
+This Cold Boot Simulator demonstrates the concept of data remanence in RAM, a vulnerability that can be exploited in cold boot attacks. It visually simulates how data remains in memory even after power is turned off, which could potentially be accessed in an attack scenario.
 
-## Getting Started
+Requirements
+This simulator is built with React (a popular JavaScript library for building user interfaces).
+Framer Motion is used for animations and smooth transitions.
+Make sure you have Node.js and npm installed to run this project locally.
 
-First, run the development server:
+Installation
+Clone this repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/FrenzyVJN/cold-boot-simulator.git
 ```
+Navigate into the project folder:
+```bash
+cd cold-boot-simulator
+```
+Install the required dependencies:
+```bash
+npm install
+```
+Run the application:
+```bash
+npm run dev
+```
+This will start the development server and open the simulator in your web browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features
+Memory Grid: A grid showing the status of each bit in memory (either 0 or 1).
+Power Toggle: A button to turn the power on or off, affecting how the data decays over time.
+Elapsed Time: Displays how long the power has been off and how this correlates with data decay.
+Write Secret Data: A button that inserts a sequence of 1s (secret data) into the memory when the power is on.
+How To Use
+Power On/Off: Click the "Power Off" button to simulate a loss of power. The memory will start to decay over time, with bits turning into 0s. Click "Power On" to reset the system and stop the decay.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Write Secret Data: When the power is on, you can click the "Write Secret Data" button to insert a secret pattern (a series of 1s) into the middle of the memory grid.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Time Tracker: The simulator tracks how long the system has been powered off, which is shown in seconds. This time correlates with how much data has decayed.
 
-## Learn More
+Contributing
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
