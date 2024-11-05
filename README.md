@@ -1,4 +1,5 @@
 Introduction
+Cold boot attacks are a type of side channel attack, where an attacker gains access to information indirectly, by exploiting physical characteristics of the system (in this case, memory data that lingers after power is lost). 
 This Cold Boot Simulator demonstrates the concept of data remanence in RAM, a vulnerability that can be exploited in cold boot attacks. It visually simulates how data remains in memory even after power is turned off, which could potentially be accessed in an attack scenario.
 
 Requirements
